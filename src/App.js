@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { CssBaseline } from '@material-ui/core';
+import ReactGA from 'react-ga';
+
+import About from './components/About';
+import AppFooter from './components/Footer';
+import AppHeader from './components/Header';
+import Jerseys from './components/Jerseys';
 
 function App() {
+  if (process.env.NODE_ENV === 'production') {
+    ReactGA.initialize('UA-22412489-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+      <AppHeader />
+      <Jerseys />
+      <About />
+      <AppFooter />
+    </>
   );
 }
 
