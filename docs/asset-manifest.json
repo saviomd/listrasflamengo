@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/listrasflamengo/static/js/main.edc9bf1b.chunk.js",
-    "main.js.map": "/listrasflamengo/static/js/main.edc9bf1b.chunk.js.map",
+    "main.js": "/listrasflamengo/static/js/main.a2899cc5.chunk.js",
+    "main.js.map": "/listrasflamengo/static/js/main.a2899cc5.chunk.js.map",
     "runtime-main.js": "/listrasflamengo/static/js/runtime-main.0b667cde.js",
     "runtime-main.js.map": "/listrasflamengo/static/js/runtime-main.0b667cde.js.map",
     "static/js/2.7871a77a.chunk.js": "/listrasflamengo/static/js/2.7871a77a.chunk.js",
@@ -15,6 +15,6 @@
   "entrypoints": [
     "static/js/runtime-main.0b667cde.js",
     "static/js/2.7871a77a.chunk.js",
-    "static/js/main.edc9bf1b.chunk.js"
+    "static/js/main.a2899cc5.chunk.js"
   ]
 }

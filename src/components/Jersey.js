@@ -2,7 +2,7 @@ import { Box, Grid } from '@material-ui/core';
 
 import theme from '../data/theme';
 
-const Jersey = ({ count, initialColor, year }) => {
+const Jersey = ({ count, initialColor, manufacturer, year }) => {
   const { black, red } = theme.stripes;
   const colors = (initialColor ? [black, red] : [red, black]);
   const stripes = [...Array(count).keys()];
@@ -15,6 +15,7 @@ const Jersey = ({ count, initialColor, year }) => {
           <Box key={item} component={Grid} item xs bgcolor={colors[item % 2]} />
         ))}
       </Box>
+      <Box textAlign="center">{manufacturer}</Box>
     </Box>
   );
 };
