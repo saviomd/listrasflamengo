@@ -40,6 +40,7 @@ const jerseys = [
   { year: 2018, initialColor: 1, count: 11, manufacturer: 'Adidas' },
   { year: 2019, initialColor: 0, count: 18, manufacturer: 'Adidas' },
   { year: 2020, initialColor: 1, count: 5, manufacturer: 'Adidas' },
+  { year: 2021, initialColor: 1, count: 5, manufacturer: 'Adidas' },
 ];
 
 export default jerseys;
