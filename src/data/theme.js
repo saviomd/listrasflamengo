@@ -1,4 +1,4 @@
-import { colors } from '@material-ui/core';
+import { colors } from "@material-ui/core";
 
 const theme = {
   about: {
@@ -12,7 +12,7 @@ const theme = {
     self: colors.lightGreen[300],
   },
   fonts: {
-    squadaOne: 'Squada One, cursive',
+    squadaOne: "Squada One, cursive",
   },
   stripes: {
     black: colors.grey[900],

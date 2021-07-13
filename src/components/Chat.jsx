@@ -1,15 +1,17 @@
-import ChatBubble from './ChatBubble';
+import React from "react";
 
-import chat from '../data/chat';
+import ChatBubble from "./ChatBubble";
+
+import chat from "../data/chat";
 
 const Chat = () => (
   <>
-    {chat.map(({ author, message }, index) => (
+    {chat.map(({ author, message }) => (
       <ChatBubble
         author={author}
-        key={index}
+        key={message}
         message={message}
-        self={author === 'Sávio'}
+        self={author === "Sávio"}
       />
     ))}
   </>
