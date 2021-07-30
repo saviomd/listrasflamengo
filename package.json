@@ -1,6 +1,6 @@
 {
   "name": "listrasflamengo",
-  "version": "1.0.20210713",
+  "version": "1.0.20210729",
   "author": "Sávio Mendes",
   "license": "UNLICENSED",
   "private": true,
@@ -14,13 +14,15 @@
     "build": "react-scripts build",
     "postbuild": "rm -r docs && mv build docs",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.1",
+    "@material-ui/core": "^4.12.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.1.9",
+    "@testing-library/user-event": "^13.2.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -29,7 +31,13 @@
     "web-vitals": "^2.1.0"
   },
   "devDependencies": {
-    "eslint": "^7.30.0",
+    "@storybook/addon-actions": "^6.3.6",
+    "@storybook/addon-essentials": "^6.3.6",
+    "@storybook/addon-links": "^6.3.6",
+    "@storybook/node-logger": "^6.3.6",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.6",
+    "eslint": "^7.31.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
@@ -61,10 +69,22 @@
       "react-app",
       "react-app/jest",
       "airbnb",
-      "prettier"
+      "airbnb/hooks",
+      "plugin:prettier/recommended"
     ],
     "ignorePatterns": [
       "src/reportWebVitals.js"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off",
+          "react/jsx-props-no-spreading": "off"
+        }
+      }
     ],
     "parserOptions": {
       "ecmaFeatures": {
@@ -74,11 +94,7 @@
       "sourceType": "module"
     },
     "plugins": [
-      "react",
-      "prettier"
-    ],
-    "rules": {
-      "prettier/prettier": "error"
-    }
+      "react"
+    ]
   }
 }

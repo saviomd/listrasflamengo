@@ -4,9 +4,12 @@ import React from "react";
 
 import theme from "../data/theme";
 
+const initialColors = ["black", "red"];
+
 const Jersey = ({ count, initialColor, manufacturer, year }) => {
   const { black, red } = theme.stripes;
-  const colors = initialColor ? [black, red] : [red, black];
+  const colors =
+    initialColor === initialColors[0] ? [black, red] : [red, black];
   const stripes = [...Array(count).keys()];
   return (
     <Box
@@ -58,9 +61,10 @@ const Jersey = ({ count, initialColor, manufacturer, year }) => {
 
 Jersey.propTypes = {
   count: PropTypes.number.isRequired,
-  initialColor: PropTypes.number.isRequired,
+  initialColor: PropTypes.oneOf(initialColors).isRequired,
   manufacturer: PropTypes.string.isRequired,
   year: PropTypes.number.isRequired,
 };
 
 export default Jersey;
+export { initialColors };
