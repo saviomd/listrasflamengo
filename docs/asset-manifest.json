@@ -4,17 +4,17 @@
     "main.js.map": "/listrasflamengo/static/js/main.e14e87d6.chunk.js.map",
     "runtime-main.js": "/listrasflamengo/static/js/runtime-main.0d36697f.js",
     "runtime-main.js.map": "/listrasflamengo/static/js/runtime-main.0d36697f.js.map",
-    "static/js/2.3969af2d.chunk.js": "/listrasflamengo/static/js/2.3969af2d.chunk.js",
-    "static/js/2.3969af2d.chunk.js.map": "/listrasflamengo/static/js/2.3969af2d.chunk.js.map",
+    "static/js/2.f2490c65.chunk.js": "/listrasflamengo/static/js/2.f2490c65.chunk.js",
+    "static/js/2.f2490c65.chunk.js.map": "/listrasflamengo/static/js/2.f2490c65.chunk.js.map",
     "static/js/3.0ab9022c.chunk.js": "/listrasflamengo/static/js/3.0ab9022c.chunk.js",
     "static/js/3.0ab9022c.chunk.js.map": "/listrasflamengo/static/js/3.0ab9022c.chunk.js.map",
     "index.html": "/listrasflamengo/index.html",
-    "static/js/2.3969af2d.chunk.js.LICENSE.txt": "/listrasflamengo/static/js/2.3969af2d.chunk.js.LICENSE.txt",
+    "static/js/2.f2490c65.chunk.js.LICENSE.txt": "/listrasflamengo/static/js/2.f2490c65.chunk.js.LICENSE.txt",
     "static/media/henrique-soares-2nSTmUbWvy0-unsplash.8945660d.jpg": "/listrasflamengo/static/media/henrique-soares-2nSTmUbWvy0-unsplash.8945660d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0d36697f.js",
-    "static/js/2.3969af2d.chunk.js",
+    "static/js/2.f2490c65.chunk.js",
     "static/js/main.e14e87d6.chunk.js"
   ]
 }
