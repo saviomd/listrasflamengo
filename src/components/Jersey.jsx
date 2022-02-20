@@ -6,7 +6,7 @@ import theme from "../data/theme";
 
 const initialColors = ["black", "red"];
 
-const Jersey = ({ count, initialColor, manufacturer, year }) => {
+function Jersey({ count, initialColor, manufacturer, year }) {
   const { black, red } = theme.stripes;
   const colors =
     initialColor === initialColors[0] ? [black, red] : [red, black];
@@ -57,7 +57,7 @@ const Jersey = ({ count, initialColor, manufacturer, year }) => {
       <Box textAlign="center">{manufacturer}</Box>
     </Box>
   );
-};
+}
 
 Jersey.propTypes = {
   count: PropTypes.number.isRequired,

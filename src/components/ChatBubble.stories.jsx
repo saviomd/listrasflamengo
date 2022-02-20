@@ -7,11 +7,13 @@ export default {
   component: ChatBubble,
 };
 
-const Template = (args) => (
-  <div style={{ maxWidth: 500 }}>
-    <ChatBubble {...args} />
-  </div>
-);
+function Template(args) {
+  return (
+    <div style={{ maxWidth: 500 }}>
+      <ChatBubble {...args} />
+    </div>
+  );
+}
 
 export const Default = Template.bind({});
 Default.args = {

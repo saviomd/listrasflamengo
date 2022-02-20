@@ -14,21 +14,23 @@ const style = {
   textShadow: `0 0 8px ${colors.grey[900]}`,
 };
 
-const Header = () => (
-  <Box
-    component="h1"
-    fontFamily={theme.fonts.squadaOne}
-    fontSize={{ xs: "h2.fontSize", sm: "h1.fontSize" }}
-    lineHeight={1}
-    m={0}
-    px={3}
-    py={{ xs: 4, sm: 8 }}
-    style={style}
-  >
-    Listras do
-    <br />
-    Flamengo
-  </Box>
-);
+function Header() {
+  return (
+    <Box
+      component="h1"
+      fontFamily={theme.fonts.squadaOne}
+      fontSize={{ xs: "h2.fontSize", sm: "h1.fontSize" }}
+      lineHeight={1}
+      m={0}
+      px={3}
+      py={{ xs: 4, sm: 8 }}
+      style={style}
+    >
+      Listras do
+      <br />
+      Flamengo
+    </Box>
+  );
+}
 
 export default Header;

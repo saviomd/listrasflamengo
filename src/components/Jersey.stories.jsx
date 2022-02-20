@@ -10,11 +10,13 @@ export default {
   },
 };
 
-const Template = (args) => (
-  <div style={{ maxWidth: 200 }}>
-    <Jersey {...args} />
-  </div>
-);
+function Template(args) {
+  return (
+    <div style={{ maxWidth: 200 }}>
+      <Jersey {...args} />
+    </div>
+  );
+}
 
 export const Default = Template.bind({});
 Default.args = {
