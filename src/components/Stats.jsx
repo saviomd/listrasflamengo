@@ -8,7 +8,7 @@ import {
   TableContainer,
   TableHead,
   TableRow,
-} from "@material-ui/core";
+} from "@mui/material";
 import React from "react";
 
 import jerseys from "../data/jerseys";

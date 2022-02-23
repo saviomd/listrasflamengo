@@ -1,4 +1,4 @@
-import { CssBaseline } from "@material-ui/core";
+import { CssBaseline } from "@mui/material";
 
 export const decorators = [
   (Story) => (
@@ -17,4 +17,4 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};

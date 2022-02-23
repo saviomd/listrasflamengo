@@ -1,4 +1,4 @@
-import { Box } from "@material-ui/core";
+import { Box } from "@mui/material";
 import PropTypes from "prop-types";
 import React from "react";
 
@@ -8,7 +8,7 @@ function ChatBubble({ author, message, self }) {
   return (
     <Box
       bgcolor={theme.chatBubble[self ? "self" : "default"]}
-      borderRadius={8}
+      borderRadius={2}
       mb={1}
       ml={self ? 8 : 0}
       mr={!self ? 8 : 0}

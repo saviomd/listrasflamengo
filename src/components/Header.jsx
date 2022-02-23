@@ -1,4 +1,4 @@
-import { Box, colors } from "@material-ui/core";
+import { Box, colors } from "@mui/material";
 import React from "react";
 
 import backgroundImage from "../img/henrique-soares-2nSTmUbWvy0-unsplash.jpg";

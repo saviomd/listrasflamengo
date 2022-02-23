@@ -1,4 +1,4 @@
-import { Box, Container, Grid } from "@material-ui/core";
+import { Box, Container, Grid } from "@mui/material";
 import React from "react";
 
 import Jersey from "./Jersey";
