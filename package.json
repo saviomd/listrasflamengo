@@ -1,6 +1,6 @@
 {
   "name": "listrasflamengo",
-  "version": "1.0.20220220",
+  "version": "1.0.20220222",
   "author": "Sávio Mendes",
   "license": "UNLICENSED",
   "private": true,
@@ -33,13 +33,17 @@
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
     "@storybook/addon-links": "^6.4.19",
+    "@storybook/builder-webpack5": "^6.4.19",
+    "@storybook/manager-webpack5": "^6.4.19",
     "@storybook/node-logger": "^6.4.19",
     "@storybook/preset-create-react-app": "^4.0.1",
     "@storybook/react": "^6.4.19",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.5.1"
+    "eslint-plugin-storybook": "^0.5.7",
+    "prettier": "^2.5.1",
+    "webpack": "^5.69.1"
   },
   "browserslist": {
     "production": [
@@ -64,7 +68,8 @@
       "react-app/jest",
       "airbnb",
       "airbnb/hooks",
-      "plugin:prettier/recommended"
+      "plugin:prettier/recommended",
+      "plugin:storybook/recommended"
     ],
     "ignorePatterns": [
       "src/reportWebVitals.js"
@@ -75,7 +80,6 @@
           "**/*.stories.*"
         ],
         "rules": {
-          "import/no-anonymous-default-export": "off",
           "react/jsx-props-no-spreading": "off"
         }
       }
