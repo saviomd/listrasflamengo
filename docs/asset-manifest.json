@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/listrasflamengo/static/js/main.db181c4b.js",
+    "main.js": "/listrasflamengo/static/js/main.d25743b9.js",
     "static/js/787.caafe27d.chunk.js": "/listrasflamengo/static/js/787.caafe27d.chunk.js",
     "static/media/henrique-soares-2nSTmUbWvy0-unsplash.jpg": "/listrasflamengo/static/media/henrique-soares-2nSTmUbWvy0-unsplash.8945660d262cab744e70.jpg",
     "index.html": "/listrasflamengo/index.html",
-    "main.db181c4b.js.map": "/listrasflamengo/static/js/main.db181c4b.js.map",
+    "main.d25743b9.js.map": "/listrasflamengo/static/js/main.d25743b9.js.map",
     "787.caafe27d.chunk.js.map": "/listrasflamengo/static/js/787.caafe27d.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.db181c4b.js"
+    "static/js/main.d25743b9.js"
   ]
 }

@@ -6,11 +6,11 @@ import jerseys from "../data/jerseys";
 
 function Jerseys() {
   return (
-    <Box component={Container} p={4} maxWidth="lg">
+    <Box component={Container} sx={{ maxWidth: "lg", p: 4 }}>
       <Grid
         container
         spacing={2}
-        style={{ flexWrap: "nowrap", overflowX: "scroll" }}
+        sx={{ flexWrap: "nowrap", overflowX: "scroll" }}
       >
         {[...jerseys]
           .reverse()

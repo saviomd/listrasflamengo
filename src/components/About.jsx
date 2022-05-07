@@ -6,9 +6,14 @@ import theme from "../data/theme";
 
 function About() {
   return (
-    <Box bgcolor={theme.about.bgcolor} py={2}>
-      <Container maxWidth="lg">
-        <Box component="h1" m={0} mb={2}>
+    <Box
+      sx={{
+        bgcolor: theme.about.bgcolor,
+        py: 2,
+      }}
+    >
+      <Container sx={{ maxWidth: "lg" }}>
+        <Box component="h1" sx={{ m: 0, mb: 2 }}>
           Sobre
         </Box>
         <Grid container spacing={4}>

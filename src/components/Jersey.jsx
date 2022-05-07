@@ -12,28 +12,32 @@ function Jersey({ count, initialColor, manufacturer, year }) {
     initialColor === initialColors[0] ? [black, red] : [red, black];
   const stripes = [...Array(count).keys()];
   return (
-    <Box key={year} component={Grid} item flexGrow={1} minWidth={160}>
+    <Box key={year} component={Grid} item sx={{ flexGrow: 1, minWidth: 160 }}>
       <Box
         component="h2"
-        fontSize="h5.fontSize"
-        m={0}
-        mb={1}
-        textAlign="center"
+        sx={{
+          fontSize: "h5.fontSize",
+          m: 0,
+          mb: 1,
+          textAlign: "center",
+        }}
       >
         {year}
       </Box>
       <Box position="relative">
         <Box
-          color="#fff"
-          fontFamily={theme.fonts.squadaOne}
           component="h1"
-          fontSize="h1.fontSize"
-          m={0}
-          left={0}
-          position="absolute"
-          right={0}
-          textAlign="center"
-          top="20%"
+          sx={{
+            color: "#fff",
+            fontFamily: theme.fonts.squadaOne,
+            fontSize: "h1.fontSize",
+            m: 0,
+            left: 0,
+            position: "absolute",
+            right: 0,
+            textAlign: "center",
+            top: "20%",
+          }}
         >
           {count}
         </Box>
@@ -41,8 +45,10 @@ function Jersey({ count, initialColor, manufacturer, year }) {
           component={Grid}
           container
           direction="column"
-          height={240}
-          spacing={0}
+          sx={{
+            height: 240,
+            spacing: 0,
+          }}
         >
           {stripes.map((item) => (
             <Box
@@ -50,11 +56,11 @@ function Jersey({ count, initialColor, manufacturer, year }) {
               component={Grid}
               item
               xs
-              bgcolor={colors[item % 2]}
+              sx={{ bgcolor: colors[item % 2] }}
             />
           ))}
         </Box>
-        <Box textAlign="center">{manufacturer}</Box>
+        <Box sx={{ textAlign: "center" }}>{manufacturer}</Box>
       </Box>
     </Box>
   );

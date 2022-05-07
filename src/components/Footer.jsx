@@ -5,7 +5,7 @@ import Anchor from "./Anchor";
 
 function Footer() {
   return (
-    <Box py={2} textAlign="center">
+    <Box sx={{ py: 2, textAlign: "center" }}>
       <Typography component="div" variant="caption" gutterBottom>
         {`© 2020-${new Date().getFullYear()}`}
         <Anchor href="http://saviomd.com/" target="_blank">

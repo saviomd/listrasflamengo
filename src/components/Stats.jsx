@@ -58,9 +58,9 @@ stats = [all, ...stats].map((item) => ({
 
 function Stats() {
   return (
-    <Box py={2}>
-      <Container maxWidth="lg">
-        <Box mx="auto" maxWidth={400} py={2}>
+    <Box sx={{ py: 2 }}>
+      <Container sx={{ maxWidth: "lg" }}>
+        <Box sx={{ maxWidth: 400, mx: "auto", py: 2 }}>
           <TableContainer component={Paper}>
             <Table>
               <TableHead>
