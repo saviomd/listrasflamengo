@@ -1,17 +1,13 @@
-import { Box, Container, Grid } from "@mui/material";
 import React from "react";
 
+import { Container } from "./system";
 import Jersey from "./Jersey";
 import jerseys from "../data/jerseys";
 
 function Jerseys() {
   return (
-    <Box component={Container} sx={{ maxWidth: "lg", p: 4 }}>
-      <Grid
-        container
-        spacing={2}
-        sx={{ flexWrap: "nowrap", overflowX: "scroll" }}
-      >
+    <Container>
+      <div className="flex flex-nowrap -mx-2 overflow-x-scroll py-4">
         {[...jerseys]
           .reverse()
           .map(({ count, initialColor, manufacturer, year }) => (
@@ -23,8 +19,8 @@ function Jerseys() {
               year={year}
             />
           ))}
-      </Grid>
-    </Box>
+      </div>
+    </Container>
   );
 }
 

@@ -1,6 +1,7 @@
-import { CssBaseline } from "@mui/material";
 import React from "react";
 import ReactGA from "react-ga";
+
+import "./style.css";
 
 import About from "./components/About";
 import AppFooter from "./components/Footer";
@@ -15,7 +16,6 @@ function App() {
   }
   return (
     <>
-      <CssBaseline />
       <AppHeader />
       <Jerseys />
       <Stats />

@@ -1,16 +1,6 @@
-import {
-  Box,
-  Container,
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-} from "@mui/material";
 import React from "react";
 
+import { Container, Table } from "./system";
 import jerseys from "../data/jerseys";
 
 function Manufacturer({ manufacturer }) {
@@ -58,46 +48,38 @@ stats = [all, ...stats].map((item) => ({
 
 function Stats() {
   return (
-    <Box sx={{ py: 2 }}>
-      <Container sx={{ maxWidth: "lg" }}>
-        <Box sx={{ maxWidth: 400, mx: "auto", py: 2 }}>
-          <TableContainer component={Paper}>
-            <Table>
-              <TableHead>
-                <TableRow>
-                  <TableCell colSpan={2} />
-                  <TableCell align="center" colSpan={4}>
-                    Número de listras
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Fabricante</TableCell>
-                  <TableCell align="right">Anos</TableCell>
-                  <TableCell align="right">Média</TableCell>
-                  <TableCell align="right">Maior</TableCell>
-                  <TableCell align="right">Menor</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {stats.map(
-                  ({ average, bigger, count, manufacturer, smaller }) => (
-                    <TableRow key={manufacturer}>
-                      <TableCell component="th" scope="row">
-                        {manufacturer}
-                      </TableCell>
-                      <TableCell align="right">{count}</TableCell>
-                      <TableCell align="right">{average}</TableCell>
-                      <TableCell align="right">{bigger}</TableCell>
-                      <TableCell align="right">{smaller}</TableCell>
-                    </TableRow>
-                  )
-                )}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </Box>
-      </Container>
-    </Box>
+    <Container>
+      <div className="max-w-md mx-auto py-4">
+        <Table.Component>
+          <Table.Head>
+            <Table.Row>
+              <Table.HeaderCell aria-label="Fabricante" colSpan={2} />
+              <Table.HeaderCell colSpan={4}>Número de listras</Table.HeaderCell>
+            </Table.Row>
+            <Table.Row className="border-b">
+              <Table.HeaderCell align="left">Fabricante</Table.HeaderCell>
+              <Table.HeaderCell align="right">Anos</Table.HeaderCell>
+              <Table.HeaderCell align="right">Média</Table.HeaderCell>
+              <Table.HeaderCell align="right">Maior</Table.HeaderCell>
+              <Table.HeaderCell align="right">Menor</Table.HeaderCell>
+            </Table.Row>
+          </Table.Head>
+          <Table.Body>
+            {stats.map(({ average, bigger, count, manufacturer, smaller }) => (
+              <Table.Row key={manufacturer}>
+                <Table.HeaderCell align="left" scope="row">
+                  {manufacturer}
+                </Table.HeaderCell>
+                <Table.DataCell align="right">{count}</Table.DataCell>
+                <Table.DataCell align="right">{average}</Table.DataCell>
+                <Table.DataCell align="right">{bigger}</Table.DataCell>
+                <Table.DataCell align="right">{smaller}</Table.DataCell>
+              </Table.Row>
+            ))}
+          </Table.Body>
+        </Table.Component>
+      </div>
+    </Container>
   );
 }
 

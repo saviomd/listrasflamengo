@@ -3,7 +3,7 @@ import React from "react";
 import Jersey, { initialColors } from "./Jersey";
 
 export default {
-  title: "Example/Jersey",
+  title: "components/Jersey",
   component: Jersey,
   argTypes: {
     initialColor: { options: initialColors },
@@ -12,7 +12,7 @@ export default {
 
 function Template(args) {
   return (
-    <div style={{ maxWidth: 200 }}>
+    <div style={{ display: "inline-block" }}>
       <Jersey {...args} />
     </div>
   );
@@ -23,5 +23,5 @@ Default.args = {
   count: 5,
   initialColor: initialColors[0],
   manufacturer: "manufacturer",
-  year: new Date().getFullYear(),
+  year: 1895,
 };

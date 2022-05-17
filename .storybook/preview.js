@@ -1,13 +1,6 @@
-import { CssBaseline } from "@mui/material";
+import "../src/style.css";
 
-export const decorators = [
-  (Story) => (
-    <>
-      <CssBaseline />
-      <Story />
-    </>
-  ),
-];
+export const decorators = [(Story) => <Story />];
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

@@ -3,7 +3,7 @@ import React from "react";
 import ChatBubble from "./ChatBubble";
 
 export default {
-  title: "Example/ChatBubble",
+  title: "components/ChatBubble",
   component: ChatBubble,
 };
 

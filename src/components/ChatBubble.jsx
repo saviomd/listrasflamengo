@@ -1,25 +1,18 @@
-import { Box } from "@mui/material";
 import PropTypes from "prop-types";
 import React from "react";
 
-import theme from "../data/theme";
-
 function ChatBubble({ author, message, self }) {
   return (
-    <Box
-      sx={{
-        bgcolor: theme.chatBubble[self ? "self" : "default"],
-        borderRadius: 2,
-        mb: 1,
-        ml: self ? 8 : 0,
-        mr: !self ? 8 : 0,
-        p: 1,
-        textAlign: self ? "right" : "left",
-      }}
+    <div
+      className={`rounded-lg mb-2 p-2 ${
+        self
+          ? "bg-chat-self ml-16 text-right"
+          : "bg-chat-default mr-16 text-left"
+      }`}
     >
-      <Box sx={{ fontWeight: "fontWeightBold" }}>{author}</Box>
+      <div className="font-bold">{author}</div>
       <div>{message}</div>
-    </Box>
+    </div>
   );
 }
 

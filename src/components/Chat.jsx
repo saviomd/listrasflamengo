@@ -6,7 +6,7 @@ import chat from "../data/chat";
 
 function Chat() {
   return (
-    <>
+    <div className="mb-4">
       {chat.map(({ author, message }) => (
         <ChatBubble
           author={author}
@@ -15,7 +15,7 @@ function Chat() {
           self={author === "Sávio"}
         />
       ))}
-    </>
+    </div>
   );
 }
 

@@ -1,42 +1,34 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 
+import { Container, Heading, Paragraph } from "./system";
 import Chat from "./Chat";
-import theme from "../data/theme";
 
 function About() {
   return (
-    <Box
-      sx={{
-        bgcolor: theme.about.bgcolor,
-        py: 2,
-      }}
-    >
-      <Container sx={{ maxWidth: "lg" }}>
-        <Box component="h1" sx={{ m: 0, mb: 2 }}>
-          Sobre
-        </Box>
-        <Grid container spacing={4}>
-          <Grid item xs={12} sm={6} md={4}>
+    <div className="bg-about py-4">
+      <Container>
+        <Heading level={2}>Sobre</Heading>
+        <div className="flex flex-wrap -mx-4">
+          <div className="px-4 w-full sm:w-6/12 lg:w-4/12">
             <Chat />
-          </Grid>
-          <Grid item xs>
-            <Typography variant="h6" component="p" gutterBottom>
+          </div>
+          <div className="text-xl px-4 w-full sm:w-6/12 lg:w-8/12">
+            <Paragraph>
               Site ilustrando a evolução (e constantes mudanças) ano a ano das
               listras na camisa principal do Flamengo.
-            </Typography>
-            <Typography variant="h6" component="p" gutterBottom>
+            </Paragraph>
+            <Paragraph>
               O que uma conversa no grupo do Mengão do trabalho sobre a camisa
               rejeitada pela diretoria e o tempo livre na quarentena não fazem?
-            </Typography>
+            </Paragraph>
             <img
               alt="saviomd xbox avatar"
               src="https://avatar-ssl.xboxlive.com/avatar/saviomd/avatar-body.png"
             />
-          </Grid>
-        </Grid>
+          </div>
+        </div>
       </Container>
-    </Box>
+    </div>
   );
 }
 
