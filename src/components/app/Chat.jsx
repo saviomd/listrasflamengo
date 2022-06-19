@@ -1,8 +1,7 @@
 import React from "react";
 
 import ChatBubble from "./ChatBubble";
-
-import chat from "../data/chat";
+import { chat } from "../../data";
 
 function Chat() {
   return (

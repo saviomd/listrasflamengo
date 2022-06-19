@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Container, Table } from "./system";
-import jerseys from "../data/jerseys";
+import { Container, Table } from "../system";
+import { jerseys } from "../../data";
 
 function Manufacturer({ manufacturer }) {
   return {
@@ -49,7 +49,7 @@ stats = [all, ...stats].map((item) => ({
 function Stats() {
   return (
     <Container>
-      <div className="max-w-md mx-auto py-4">
+      <div className="mx-auto max-w-md py-4">
         <Table.Component>
           <Table.Head>
             <Table.Row>

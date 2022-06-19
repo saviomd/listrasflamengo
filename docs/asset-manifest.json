@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/listrasflamengo/static/css/main.05377cf9.css",
-    "main.js": "/listrasflamengo/static/js/main.6ffbd407.js",
+    "main.css": "/listrasflamengo/static/css/main.aab0dd2d.css",
+    "main.js": "/listrasflamengo/static/js/main.613c9be0.js",
     "static/js/787.caafe27d.chunk.js": "/listrasflamengo/static/js/787.caafe27d.chunk.js",
     "static/media/henrique-soares-2nSTmUbWvy0-unsplash.jpg": "/listrasflamengo/static/media/henrique-soares-2nSTmUbWvy0-unsplash.8945660d262cab744e70.jpg",
     "index.html": "/listrasflamengo/index.html",
-    "main.05377cf9.css.map": "/listrasflamengo/static/css/main.05377cf9.css.map",
-    "main.6ffbd407.js.map": "/listrasflamengo/static/js/main.6ffbd407.js.map",
+    "main.aab0dd2d.css.map": "/listrasflamengo/static/css/main.aab0dd2d.css.map",
+    "main.613c9be0.js.map": "/listrasflamengo/static/js/main.613c9be0.js.map",
     "787.caafe27d.chunk.js.map": "/listrasflamengo/static/js/787.caafe27d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05377cf9.css",
-    "static/js/main.6ffbd407.js"
+    "static/css/main.aab0dd2d.css",
+    "static/js/main.613c9be0.js"
   ]
 }

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import { Heading } from "./system";
+import { Heading } from "../system";
 
 const initialColors = ["black", "red"];
 
@@ -12,13 +12,13 @@ function Jersey({ count, initialColor, manufacturer, year }) {
       : ["bg-stripe-red", "bg-stripe-black"];
   const stripes = [...Array(count).keys()];
   return (
-    <div className="text-center px-2 min-w-fit" key={year}>
+    <div className="min-w-fit px-2 text-center" key={year}>
       <Heading level={2}>{year}</Heading>
       <div className="relative w-36">
-        <div className="absolute font-squadaOne leading-jersey left-0 right-0 text-8xl text-white">
+        <div className="absolute left-0 right-0 font-squadaOne text-8xl leading-jersey text-white">
           {count}
         </div>
-        <div className="flex flex-col h-jersey">
+        <div className="flex h-jersey flex-col">
           {stripes.map((item) => (
             <div className={`${colors[item % 2]} grow`} key={item} />
           ))}

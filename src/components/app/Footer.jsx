@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Anchor } from "./system";
+import { Anchor } from "../system";
 
 function Footer() {
   return (
@@ -9,7 +9,7 @@ function Footer() {
       <Anchor href="http://saviomd.com/" target="_blank">
         <img
           alt="saviomd.com"
-          className="align-middle inline"
+          className="inline align-middle"
           height="14"
           src="https://saviomd.com/img/favicon.png"
           width="14"

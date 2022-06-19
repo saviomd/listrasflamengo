@@ -3,7 +3,7 @@ import React from "react";
 import Jersey, { initialColors } from "./Jersey";
 
 export default {
-  title: "components/Jersey",
+  title: "app/Jersey",
   component: Jersey,
   argTypes: {
     initialColor: { options: initialColors },

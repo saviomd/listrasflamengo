@@ -11,7 +11,7 @@ const levelKeys = Object.keys(levels).map((item) => parseInt(item, 10));
 function Heading({ children, level }) {
   const HeadingTag = `h${level}`;
   return (
-    <HeadingTag className={`font-bold mb-2 ${levels[level]}`}>
+    <HeadingTag className={`mb-2 font-bold ${levels[level]}`}>
       {children}
     </HeadingTag>
   );

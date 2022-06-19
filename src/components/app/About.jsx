@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Heading, Paragraph } from "./system";
+import { Container, Heading, Paragraph } from "../system";
 import Chat from "./Chat";
 
 function About() {
@@ -8,11 +8,11 @@ function About() {
     <div className="bg-about py-4">
       <Container>
         <Heading level={2}>Sobre</Heading>
-        <div className="flex flex-wrap -mx-4">
-          <div className="px-4 w-full sm:w-6/12 lg:w-4/12">
+        <div className="-mx-4 flex flex-wrap">
+          <div className="w-full px-4 sm:w-6/12 lg:w-4/12">
             <Chat />
           </div>
-          <div className="text-xl px-4 w-full sm:w-6/12 lg:w-8/12">
+          <div className="w-full px-4 text-xl sm:w-6/12 lg:w-8/12">
             <Paragraph>
               Site ilustrando a evolução (e constantes mudanças) ano a ano das
               listras na camisa principal do Flamengo.

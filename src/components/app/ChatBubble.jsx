@@ -4,10 +4,10 @@ import React from "react";
 function ChatBubble({ author, message, self }) {
   return (
     <div
-      className={`rounded-lg mb-2 p-2 ${
+      className={`mb-2 rounded-lg p-2 ${
         self
-          ? "bg-chat-self ml-16 text-right"
-          : "bg-chat-default mr-16 text-left"
+          ? "ml-16 bg-chat-self text-right"
+          : "mr-16 bg-chat-default text-left"
       }`}
     >
       <div className="font-bold">{author}</div>

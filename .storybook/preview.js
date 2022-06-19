@@ -1,4 +1,4 @@
-import "../src/style.css";
+import "../src/App.css";
 
 export const decorators = [(Story) => <Story />];
 

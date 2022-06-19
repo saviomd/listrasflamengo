@@ -1,13 +1,9 @@
 import React from "react";
 import ReactGA from "react-ga";
 
-import "./style.css";
+import "./App.css";
 
-import About from "./components/About";
-import AppFooter from "./components/Footer";
-import AppHeader from "./components/Header";
-import Jerseys from "./components/Jerseys";
-import Stats from "./components/Stats";
+import { About, Footer, Header, Jerseys, Stats } from "./components/app";
 
 function App() {
   if (process.env.NODE_ENV === "production") {
@@ -16,11 +12,11 @@ function App() {
   }
   return (
     <>
-      <AppHeader />
+      <Header />
       <Jerseys />
       <Stats />
       <About />
-      <AppFooter />
+      <Footer />
     </>
   );
 }
