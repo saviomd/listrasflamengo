@@ -3,7 +3,7 @@ import React from "react";
 import Table, { textAlignKeys } from "./Table";
 
 export default {
-  title: "system/Table",
+  title: "library/Table",
   component: Table,
   argTypes: {
     children: { control: { type: null } },
@@ -14,7 +14,7 @@ export default {
 
 function Template(args) {
   return (
-    <Table.Component {...args}>
+    <Table {...args}>
       <Table.Head>
         <Table.Row>
           {textAlignKeys.map((item) => (
@@ -43,7 +43,7 @@ function Template(args) {
           <Table.DataCell colSpan={2}>colSpan 2</Table.DataCell>
         </Table.Row>
       </Table.Body>
-    </Table.Component>
+    </Table>
   );
 }
 

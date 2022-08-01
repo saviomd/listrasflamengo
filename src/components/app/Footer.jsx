@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Anchor } from "../system";
+import { Anchor } from "../library";
 
 function Footer() {
   return (

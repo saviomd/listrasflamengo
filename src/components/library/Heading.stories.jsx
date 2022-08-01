@@ -1,23 +1,22 @@
 import React from "react";
 
-import Anchor from "./Anchor";
+import Heading, { levelKeys } from "./Heading";
 
 export default {
-  title: "system/Anchor",
-  component: Anchor,
+  title: "library/Heading",
+  component: Heading,
   argTypes: {
     children: { control: { type: null } },
-    href: { control: { type: null } },
-    target: { control: { type: null } },
+    level: { control: "radio", options: levelKeys },
   },
 };
 
 function Template(args) {
-  return <Anchor {...args} />;
+  return <Heading {...args} />;
 }
 
 export const Default = Template.bind({});
 Default.args = {
   children: "Lorem ipsum dolor sit amet",
-  href: "./",
+  level: levelKeys[0],
 };

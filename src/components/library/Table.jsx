@@ -11,34 +11,43 @@ const textAlignValues = {
 const textAlignKeys = Object.keys(textAlignValues);
 const cellClassName = (align) => `p-2 ${align ? textAlignValues[align] : ""}`;
 
-const Table = {
-  Component: ({ children }) => {
-    return <table className="w-full">{children}</table>;
-  },
-  Head: ({ children }) => {
-    return <thead>{children}</thead>;
-  },
-  Body: ({ children }) => {
-    return <tbody>{children}</tbody>;
-  },
-  Row: ({ children }) => {
-    return <tr className="border-b">{children}</tr>;
-  },
-  HeaderCell: ({ align, children, colSpan, scope }) => {
-    return (
-      <th colSpan={colSpan} className={cellClassName(align)} scope={scope}>
-        {children}
-      </th>
-    );
-  },
-  DataCell: ({ align, children, colSpan }) => {
-    return (
-      <td colSpan={colSpan} className={cellClassName(align)}>
-        {children}
-      </td>
-    );
-  },
-};
+function Table({ children }) {
+  return <table className="w-full">{children}</table>;
+}
+
+function Head({ children }) {
+  return <thead>{children}</thead>;
+}
+
+function Body({ children }) {
+  return <tbody>{children}</tbody>;
+}
+
+function Row({ children }) {
+  return <tr className="border-b">{children}</tr>;
+}
+
+function HeaderCell({ align, children, colSpan, scope }) {
+  return (
+    <th colSpan={colSpan} className={cellClassName(align)} scope={scope}>
+      {children}
+    </th>
+  );
+}
+
+function DataCell({ align, children, colSpan }) {
+  return (
+    <td colSpan={colSpan} className={cellClassName(align)}>
+      {children}
+    </td>
+  );
+}
+
+Table.Head = Head;
+Table.Body = Body;
+Table.Row = Row;
+Table.HeaderCell = HeaderCell;
+Table.DataCell = DataCell;
 
 Object.keys(Table).forEach((key) => {
   Table[key].propTypes = {

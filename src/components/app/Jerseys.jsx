@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container } from "../system";
+import { Container } from "../library";
 import Jersey from "./Jersey";
 import { jerseys } from "../../data";
 

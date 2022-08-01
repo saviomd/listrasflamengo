@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Table } from "../system";
+import { Container, Table } from "../library";
 import { jerseys } from "../../data";
 
 function Manufacturer({ manufacturer }) {
@@ -50,7 +50,7 @@ function Stats() {
   return (
     <Container>
       <div className="mx-auto max-w-md py-4">
-        <Table.Component>
+        <Table>
           <Table.Head>
             <Table.Row>
               <Table.HeaderCell aria-label="Fabricante" colSpan={2} />
@@ -77,7 +77,7 @@ function Stats() {
               </Table.Row>
             ))}
           </Table.Body>
-        </Table.Component>
+        </Table>
       </div>
     </Container>
   );

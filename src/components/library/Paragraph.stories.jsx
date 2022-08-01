@@ -1,14 +1,14 @@
 import React from "react";
 
-import Container from "./Container";
+import Paragraph from "./Paragraph";
 
 export default {
-  title: "system/Container",
-  component: Container,
+  title: "library/Paragraph",
+  component: Paragraph,
 };
 
 function Template(args) {
-  return <Container {...args} />;
+  return <Paragraph {...args} />;
 }
 
 export const Default = Template.bind({});
