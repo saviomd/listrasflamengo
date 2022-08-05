@@ -5,11 +5,6 @@ import Table, { textAlignKeys } from "./Table";
 export default {
   title: "library/Table",
   component: Table,
-  argTypes: {
-    children: { control: { type: null } },
-    href: { control: { type: null } },
-    target: { control: { type: null } },
-  },
 };
 
 function Template(args) {
@@ -48,7 +43,4 @@ function Template(args) {
 }
 
 export const Default = Template.bind({});
-Default.args = {
-  children: "Lorem ipsum dolor sit amet",
-  href: "./",
-};
+Default.args = {};

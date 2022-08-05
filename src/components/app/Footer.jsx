@@ -11,7 +11,7 @@ function Footer() {
           alt="saviomd.com"
           className="inline align-middle"
           height="14"
-          src="https://saviomd.com/img/favicon.png"
+          src="https://saviomd.com/img/icon-192.png"
           width="14"
         />{" "}
         Sávio Mendes

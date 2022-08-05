@@ -3,23 +3,19 @@
   "name": "Listras do Flamengo",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
+      "src": "img/icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "img/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
-  "display": "standalone",
+  "display": "minimal-ui",
+  "background_color": "#b71c1c",
   "theme_color": "#b71c1c",
-  "background_color": "#b71c1c"
+  "description": "Evolução ano a ano das listras na camisa principal do Flamengo"
 }
