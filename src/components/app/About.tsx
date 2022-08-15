@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Container, Heading, Paragraph } from "../library";
 import Chat from "./Chat";
 

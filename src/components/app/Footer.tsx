@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Anchor } from "../library";
 
 function Footer() {

@@ -1,28 +1,30 @@
-import React from "react";
-
 import { Container, Table } from "../library";
 import { jerseys } from "../../data";
 
-function Manufacturer({ manufacturer }) {
+type ManufacturerStatsType = {
+  manufacturer: string;
+};
+
+function ManufacturerStats({ manufacturer }: ManufacturerStatsType) {
   return {
     manufacturer,
-    average: null,
-    bigger: null,
+    average: 0,
+    bigger: 0,
     count: 0,
-    smaller: null,
+    smaller: 0,
     total: 0,
   };
 }
-const manufacturers = [];
-const all = Manufacturer({ manufacturer: "Todas" });
-let stats = [];
+const manufacturers: string[] = [];
+const all = ManufacturerStats({ manufacturer: "Todas" });
+let stats: ReturnType<typeof ManufacturerStats>[] = [];
 jerseys.forEach(({ manufacturer }) => {
   if (!manufacturers.includes(manufacturer)) {
     manufacturers.push(manufacturer);
   }
 });
 manufacturers.forEach((manufacturer) => {
-  stats.push(Manufacturer({ manufacturer }));
+  stats.push(ManufacturerStats({ manufacturer }));
 });
 jerseys.forEach(({ count, manufacturer }) => {
   stats = stats.map((item) => {
@@ -56,7 +58,7 @@ function Stats() {
               <Table.HeaderCell aria-label="Fabricante" colSpan={2} />
               <Table.HeaderCell colSpan={4}>Número de listras</Table.HeaderCell>
             </Table.Row>
-            <Table.Row className="border-b">
+            <Table.Row>
               <Table.HeaderCell align="left">Fabricante</Table.HeaderCell>
               <Table.HeaderCell align="right">Anos</Table.HeaderCell>
               <Table.HeaderCell align="right">Média</Table.HeaderCell>

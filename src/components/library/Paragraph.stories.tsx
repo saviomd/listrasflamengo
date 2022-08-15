@@ -1,15 +1,18 @@
-import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import Paragraph from "./Paragraph";
 
 export default {
   title: "library/Paragraph",
   component: Paragraph,
-};
+  parameters: {
+    layout: "centered",
+  },
+} as ComponentMeta<typeof Paragraph>;
 
-function Template(args) {
-  return <Paragraph {...args} />;
-}
+const Template: ComponentStory<typeof Paragraph> = (args) => (
+  <Paragraph {...args} />
+);
 
 export const Default = Template.bind({});
 Default.args = {

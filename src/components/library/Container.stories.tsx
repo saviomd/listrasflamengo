@@ -1,15 +1,18 @@
-import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import Container from "./Container";
 
 export default {
   title: "library/Container",
   component: Container,
-};
+  parameters: {
+    layout: "centered",
+  },
+} as ComponentMeta<typeof Container>;
 
-function Template(args) {
-  return <Container {...args} />;
-}
+const Template: ComponentStory<typeof Container> = (args) => (
+  <Container {...args} />
+);
 
 export const Default = Template.bind({});
 Default.args = {

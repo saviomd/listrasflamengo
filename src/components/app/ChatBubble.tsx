@@ -1,7 +1,10 @@
-import PropTypes from "prop-types";
-import React from "react";
+type PropsType = {
+  author: string;
+  message: string;
+  self?: boolean;
+};
 
-function ChatBubble({ author, message, self }) {
+function ChatBubble({ author, message, self = false }: PropsType) {
   return (
     <div
       className={`mb-2 rounded-lg p-2 ${
@@ -15,11 +18,5 @@ function ChatBubble({ author, message, self }) {
     </div>
   );
 }
-
-ChatBubble.propTypes = {
-  author: PropTypes.string.isRequired,
-  message: PropTypes.string.isRequired,
-  self: PropTypes.bool.isRequired,
-};
 
 export default ChatBubble;

@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Container } from "../library";
 import Jersey from "./Jersey";
 import { jerseys } from "../../data";

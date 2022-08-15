@@ -1,5 +1,3 @@
-import React from "react";
-
 import ChatBubble from "./ChatBubble";
 import { chat } from "../../data";
 

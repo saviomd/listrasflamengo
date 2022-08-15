@@ -1,11 +1,15 @@
-import PropTypes from "prop-types";
-import React from "react";
-
 import { Heading } from "../library";
 
 const initialColors = ["black", "red"];
 
-function Jersey({ count, initialColor, manufacturer, year }) {
+type PropsType = {
+  count: number;
+  initialColor: typeof initialColors[number];
+  manufacturer: string;
+  year: number;
+};
+
+function Jersey({ count, initialColor, manufacturer, year }: PropsType) {
   const colors =
     initialColor === initialColors[0]
       ? ["bg-stripe-black", "bg-stripe-red"]
@@ -28,13 +32,6 @@ function Jersey({ count, initialColor, manufacturer, year }) {
     </div>
   );
 }
-
-Jersey.propTypes = {
-  count: PropTypes.number.isRequired,
-  initialColor: PropTypes.oneOf(initialColors).isRequired,
-  manufacturer: PropTypes.string.isRequired,
-  year: PropTypes.number.isRequired,
-};
 
 export default Jersey;
 export { initialColors };

@@ -1,5 +1,11 @@
-import PropTypes from "prop-types";
-import React from "react";
+import { ReactNode } from "react";
+
+type HeadingLevelType = keyof typeof levels;
+
+type PropsType = {
+  children: ReactNode;
+  level: HeadingLevelType;
+};
 
 const levels = {
   1: "text-3xl",
@@ -8,8 +14,8 @@ const levels = {
 };
 const levelKeys = Object.keys(levels).map((item) => parseInt(item, 10));
 
-function Heading({ children, level }) {
-  const HeadingTag = `h${level}`;
+function Heading({ children, level }: PropsType) {
+  const HeadingTag: keyof JSX.IntrinsicElements = `h${level}`;
   return (
     <HeadingTag className={`mb-2 font-bold ${levels[level]}`}>
       {children}
@@ -17,10 +23,6 @@ function Heading({ children, level }) {
   );
 }
 
-Heading.propTypes = {
-  children: PropTypes.node.isRequired,
-  level: PropTypes.oneOf(levelKeys).isRequired,
-};
-
 export default Heading;
 export { levelKeys };
+export type { HeadingLevelType };
