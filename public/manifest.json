@@ -14,7 +14,7 @@
     }
   ],
   "start_url": ".",
-  "display": "minimal-ui",
+  "display": "fullscreen",
   "background_color": "#b71c1c",
   "theme_color": "#b71c1c",
   "description": "Evolução ano a ano das listras na camisa principal do Flamengo"
