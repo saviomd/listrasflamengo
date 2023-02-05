@@ -17,7 +17,8 @@ function About() {
             </Paragraph>
             <Paragraph>
               O que uma conversa no grupo do Mengão do trabalho sobre a camisa
-              rejeitada pela diretoria e o tempo livre na quarentena não fazem?
+              com ondas rejeitada pela diretoria e o tempo livre na quarentena
+              não fazem?
             </Paragraph>
             <img
               alt="saviomd xbox avatar"
