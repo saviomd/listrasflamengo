@@ -4,7 +4,7 @@ const initialColors = ["black", "red"];
 
 type PropsType = {
   count: number;
-  initialColor: typeof initialColors[number];
+  initialColor: (typeof initialColors)[number];
   manufacturer: string;
   year: number;
 };

@@ -1,9 +1,9 @@
-const colors = require("tailwindcss/colors");
+import colors from "tailwindcss/colors";
 
 const jerseyHeight = "240px";
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
