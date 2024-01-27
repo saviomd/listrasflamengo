@@ -263,6 +263,12 @@ const jerseys = [
     count: 7,
     manufacturer: "Adidas",
   },
+  {
+    year: 2024,
+    initialColor: "black",
+    count: 11,
+    manufacturer: "Adidas",
+  },
 ];
 
 export default jerseys;
