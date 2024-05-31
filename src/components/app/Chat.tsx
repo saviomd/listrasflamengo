@@ -1,5 +1,5 @@
 import ChatBubble from "./ChatBubble";
-import { chat } from "../../data";
+import { chat } from "src/data";
 
 function Chat() {
   return (

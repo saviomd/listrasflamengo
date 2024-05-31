@@ -10,7 +10,7 @@ const meta = {
     layout: "centered",
   },
   argTypes: {
-    children: { control: { type: null } },
+    children: { control: false },
     level: { control: "radio", options: levelKeys },
   },
 } satisfies Meta<typeof Heading>;

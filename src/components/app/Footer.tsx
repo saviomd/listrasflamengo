@@ -1,4 +1,4 @@
-import { Anchor } from "../library";
+import { Anchor } from "src/components/library";
 
 function Footer() {
   return (

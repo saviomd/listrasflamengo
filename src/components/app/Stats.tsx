@@ -1,5 +1,5 @@
-import { Container, Table } from "../library";
-import { jerseys } from "../../data";
+import { Container, Table } from "src/components/library";
+import { jerseys } from "src/data";
 
 type ManufacturerStatsType = {
   manufacturer: string;

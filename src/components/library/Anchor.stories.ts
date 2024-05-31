@@ -10,9 +10,9 @@ const meta = {
     layout: "centered",
   },
   argTypes: {
-    children: { control: { type: null } },
-    href: { control: { type: null } },
-    target: { control: { type: null } },
+    children: { control: false },
+    href: { control: false },
+    target: { control: false },
   },
 } satisfies Meta<typeof Anchor>;
 
