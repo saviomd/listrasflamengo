@@ -9,8 +9,8 @@ function ChatBubble({ author, message, self = false }: PropsType) {
     <div
       className={`mb-2 rounded-lg p-2 ${
         self
-          ? "ml-16 bg-chat-self text-right"
-          : "mr-16 bg-chat-default text-left"
+          ? "bg-chat-self ml-16 text-right"
+          : "bg-chat-default mr-16 text-left"
       }`}
     >
       <div className="font-bold">{author}</div>

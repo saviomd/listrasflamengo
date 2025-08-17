@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --background-image-maracana: url("/src/img/henrique-soares-2nSTmUbWvy0-unsplash.jpg");
+
+  --color-about: #f87171;
+  --color-anchor: #1e3a8a;
+  --color-chat-default: #f0fdf4;
+  --color-chat-self: #bbf7d0;
+  --color-stripe-black: #111827;
+  --color-stripe-red: #b91c1c;
+
+  --font-squada-one: Squada One, sans-serif;
+
+  --leading-jersey: 240px;
+
+  --spacing-jersey: 240px;
+}

@@ -2,16 +2,6 @@ import { ReactNode } from "react";
 
 type TextAlignType = keyof typeof textAlignValues;
 
-const textAlignValues = {
-  center: "text-center",
-  justify: "text-justify",
-  left: "text-left",
-  right: "text-right",
-};
-const textAlignKeys = Object.keys(textAlignValues);
-const cellClassName = (align: TextAlignType | undefined) =>
-  `p-2 ${align ? textAlignValues[align] : ""}`;
-
 type BasePropsType = {
   children?: ReactNode;
 };
@@ -25,12 +15,22 @@ type HeaderCellPropsType = DataCellPropsType & {
   scope?: "col" | "row" | undefined;
 };
 
+const textAlignValues = {
+  center: "text-center",
+  justify: "text-justify",
+  left: "text-left",
+  right: "text-right",
+};
+const textAlignKeys = Object.keys(textAlignValues);
+const cellClassName = (align: TextAlignType | undefined) =>
+  `p-2 ${align ? textAlignValues[align] : ""}`;
+
 function Table({ children }: BasePropsType) {
   return <table className="w-full">{children}</table>;
 }
 
 function Head({ children }: BasePropsType) {
-  return <thead className="border-b">{children}</thead>;
+  return <thead>{children}</thead>;
 }
 
 function Body({ children }: BasePropsType) {
@@ -38,7 +38,7 @@ function Body({ children }: BasePropsType) {
 }
 
 function Row({ children }: BasePropsType) {
-  return <tr className="border-b">{children}</tr>;
+  return <tr className="border-b border-gray-200">{children}</tr>;
 }
 
 function HeaderCell({ align, children, colSpan, scope }: HeaderCellPropsType) {
