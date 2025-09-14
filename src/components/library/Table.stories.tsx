@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import Table, { textAlignKeys, TextAlignType } from "./Table";
+import Table, { textAlignKeys } from "./Table";
+import type { TextAlignType } from "./Table";
 
 const meta = {
   title: "library/Table",
