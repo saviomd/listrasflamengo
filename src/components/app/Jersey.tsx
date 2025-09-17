@@ -2,14 +2,14 @@ import { Heading } from "src/components/library";
 
 const initialColors = ["black", "red"];
 
-type PropsType = {
+interface IProps {
   count: number;
   initialColor: (typeof initialColors)[number];
   manufacturer: string;
   year: number;
-};
+}
 
-function Jersey({ count, initialColor, manufacturer, year }: PropsType) {
+function Jersey({ count, initialColor, manufacturer, year }: IProps) {
   const colors =
     initialColor === initialColors[0]
       ? ["bg-stripe-black", "bg-stripe-red"]

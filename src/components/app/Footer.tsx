@@ -1,9 +1,10 @@
 import { Anchor } from "src/components/library";
 
 function Footer() {
+  const year = new Date().getFullYear();
   return (
     <div className="p-4 text-center text-xs">
-      {`© 2020-${new Date().getFullYear()} `}
+      &copy; 2020-${year}{" "}
       <Anchor href="http://saviomd.com/" target="_blank">
         <img
           alt="saviomd.com"

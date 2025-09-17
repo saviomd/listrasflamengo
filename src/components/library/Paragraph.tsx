@@ -1,10 +1,10 @@
 import type { ReactNode } from "react";
 
-type PropsType = {
+interface IProps {
   children: ReactNode;
-};
+}
 
-function Paragraph({ children }: PropsType) {
+function Paragraph({ children }: IProps) {
   return <p className="mb-4">{children}</p>;
 }
 

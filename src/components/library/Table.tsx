@@ -1,12 +1,12 @@
 import type { ReactNode } from "react";
 
+interface IBaseProps {
+  children?: ReactNode;
+}
+
 type TextAlignType = keyof typeof textAlignValues;
 
-type BasePropsType = {
-  children?: ReactNode;
-};
-
-type DataCellPropsType = BasePropsType & {
+type DataCellPropsType = IBaseProps & {
   align?: TextAlignType;
   colSpan?: number | undefined;
 };
@@ -25,19 +25,19 @@ const textAlignKeys = Object.keys(textAlignValues);
 const cellClassName = (align: TextAlignType | undefined) =>
   `p-2 ${align ? textAlignValues[align] : ""}`;
 
-function Table({ children }: BasePropsType) {
+function Table({ children }: IBaseProps) {
   return <table className="w-full">{children}</table>;
 }
 
-function Head({ children }: BasePropsType) {
+function Head({ children }: IBaseProps) {
   return <thead>{children}</thead>;
 }
 
-function Body({ children }: BasePropsType) {
+function Body({ children }: IBaseProps) {
   return <tbody>{children}</tbody>;
 }
 
-function Row({ children }: BasePropsType) {
+function Row({ children }: IBaseProps) {
   return <tr className="border-b border-gray-200">{children}</tr>;
 }
 
