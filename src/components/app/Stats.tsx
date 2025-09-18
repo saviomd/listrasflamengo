@@ -18,19 +18,19 @@ function ManufacturerStats({ manufacturer }: IManufacturerStats) {
 const manufacturers: string[] = [];
 const all = ManufacturerStats({ manufacturer: "Todas" });
 let stats: ReturnType<typeof ManufacturerStats>[] = [];
-jerseys.forEach(({ manufacturer }) => {
+for (const { manufacturer } of jerseys) {
   if (!manufacturers.includes(manufacturer)) {
     manufacturers.push(manufacturer);
   }
-});
-manufacturers.forEach((manufacturer) => {
+}
+for (const manufacturer of manufacturers) {
   stats.push(ManufacturerStats({ manufacturer }));
-});
-jerseys.forEach(({ count, manufacturer }) => {
+}
+for (const { count, manufacturer } of jerseys) {
   stats = stats.map((item) => {
     const stat = { ...item };
     if (stat.manufacturer === manufacturer) {
-      stat.bigger = count > stat.bigger ? count : stat.bigger;
+      stat.bigger = Math.max(count, stat.bigger);
       stat.count += 1;
       stat.smaller =
         !stat.smaller || count < stat.smaller ? count : stat.smaller;
@@ -42,7 +42,7 @@ jerseys.forEach(({ count, manufacturer }) => {
     }
     return stat;
   });
-});
+}
 stats = [all, ...stats].map((item) => ({
   ...item,
   average: Math.floor(item.total / item.count),

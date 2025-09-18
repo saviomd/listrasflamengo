@@ -7,7 +7,7 @@ function Jerseys() {
     <Container>
       <div className="-mx-2 flex snap-x snap-mandatory flex-nowrap overflow-x-scroll py-4">
         {[...jerseys]
-          .reverse()
+          .toReversed()
           .map(({ count, initialColor, manufacturer, year }) => (
             <Jersey
               count={count}

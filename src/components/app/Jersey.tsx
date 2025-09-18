@@ -14,7 +14,7 @@ function Jersey({ count, initialColor, manufacturer, year }: IProps) {
     initialColor === initialColors[0]
       ? ["bg-stripe-black", "bg-stripe-red"]
       : ["bg-stripe-red", "bg-stripe-black"];
-  const stripes = [...Array(count).keys()];
+  const stripes = [...Array.from({ length: count }).keys()];
   return (
     <div className="min-w-fit snap-start px-2 text-center" key={year}>
       <Heading level={2}>{year}</Heading>
