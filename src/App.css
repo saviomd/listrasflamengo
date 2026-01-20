@@ -14,7 +14,8 @@
 
   --font-squada-one: Squada One, sans-serif;
 
-  --leading-jersey: 240px;
+  --spacing-jersey-width: calc(var(--spacing) * 36);
+  --spacing-jersey-height: calc(var(--spacing-jersey-width) * 2);
 
-  --spacing-jersey: 240px;
+  --leading-jersey: var(--spacing-jersey-height);
 }

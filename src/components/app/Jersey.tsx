@@ -18,17 +18,17 @@ function Jersey({ count, initialColor, manufacturer, year }: IProps) {
   return (
     <div className="min-w-fit snap-start px-2 text-center" key={year}>
       <Heading level={2}>{year}</Heading>
-      <div className="relative w-36">
-        <div className="font-squada-one leading-jersey absolute right-0 left-0 text-8xl text-white">
+      <div className="w-jersey-width relative">
+        <div className="font-squada-one leading-jersey absolute right-0 left-0 text-9xl text-white">
           {count}
         </div>
-        <div className="h-jersey flex flex-col">
+        <div className="h-jersey-height flex flex-col">
           {stripes.map((item) => (
             <div className={`${colors[item % 2]} grow`} key={item} />
           ))}
         </div>
-        <div>{manufacturer}</div>
       </div>
+      <div>{manufacturer}</div>
     </div>
   );
 }
