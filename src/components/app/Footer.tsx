@@ -23,7 +23,7 @@ function Footer() {
       <br />
       Foto por{" "}
       <Anchor href="https://unsplash.com/photos/2nSTmUbWvy0" target="_blank">
-        Henrique Soares
+        Marco Henrique
       </Anchor>{" "}
       no{" "}
       <Anchor href="https://unsplash.com/" target="_blank">
