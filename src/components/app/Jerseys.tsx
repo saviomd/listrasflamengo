@@ -1,6 +1,6 @@
-import { Container } from "src/components/library";
+import { Container } from "~/components/library";
 import Jersey from "./Jersey";
-import { jerseys } from "src/data";
+import { jerseys } from "~/data";
 
 function Jerseys() {
   return (

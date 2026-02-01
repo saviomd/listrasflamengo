@@ -1,5 +1,5 @@
-import { Container, Table } from "src/components/library";
-import { jerseys } from "src/data";
+import { Container, Table } from "~/components/library";
+import { jerseys } from "~/data";
 
 interface IManufacturerStats {
   manufacturer: string;

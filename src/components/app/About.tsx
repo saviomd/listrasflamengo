@@ -1,4 +1,4 @@
-import { Container, Heading, Paragraph } from "src/components/library";
+import { Container, Heading, Paragraph } from "~/components/library";
 import Chat from "./Chat";
 
 function About() {

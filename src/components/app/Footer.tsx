@@ -1,4 +1,4 @@
-import { Anchor } from "src/components/library";
+import { Anchor } from "~/components/library";
 
 function Footer() {
   const year = new Date().getFullYear();

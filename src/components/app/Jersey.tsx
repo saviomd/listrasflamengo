@@ -1,4 +1,4 @@
-import { Heading } from "src/components/library";
+import { Heading } from "~/components/library";
 
 const initialColors = ["black", "red"];
 
