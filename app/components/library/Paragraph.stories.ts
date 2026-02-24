@@ -5,10 +5,6 @@ import Paragraph from "./Paragraph";
 const meta = {
   title: "library/Paragraph",
   component: Paragraph,
-  tags: ["autodocs"],
-  parameters: {
-    layout: "centered",
-  },
 } satisfies Meta<typeof Paragraph>;
 
 export default meta;

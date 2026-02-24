@@ -5,10 +5,6 @@ import Jersey, { initialColors } from "./Jersey";
 const meta = {
   title: "app/Jersey",
   component: Jersey,
-  tags: ["autodocs"],
-  parameters: {
-    layout: "centered",
-  },
   argTypes: {
     initialColor: { options: initialColors },
   },

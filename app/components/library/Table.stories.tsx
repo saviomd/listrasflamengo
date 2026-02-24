@@ -6,10 +6,6 @@ import type { TextAlignType } from "./Table";
 const meta = {
   title: "library/Table",
   component: Table,
-  tags: ["autodocs"],
-  parameters: {
-    layout: "centered",
-  },
   decorators: [
     () => (
       <Table>

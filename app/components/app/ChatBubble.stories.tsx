@@ -5,10 +5,6 @@ import ChatBubble from "./ChatBubble";
 const meta = {
   title: "app/ChatBubble",
   component: ChatBubble,
-  tags: ["autodocs"],
-  parameters: {
-    layout: "centered",
-  },
   decorators: [
     (Story) => (
       <div style={{ maxWidth: 500 }}>
