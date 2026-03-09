@@ -1,17 +1,17 @@
 import type { ReactNode } from "react";
 
-interface IBaseProps {
+interface BaseProps {
   children?: ReactNode;
 }
 
-type TextAlignType = keyof typeof textAlignValues;
+type TextAlign = keyof typeof textAlignValues;
 
-type DataCellPropsType = IBaseProps & {
-  align?: TextAlignType;
+type DataCellProps = BaseProps & {
+  align?: TextAlign;
   colSpan?: number | undefined;
 };
 
-type HeaderCellPropsType = DataCellPropsType & {
+type HeaderCellProps = DataCellProps & {
   scope?: "col" | "row" | undefined;
 };
 
@@ -22,26 +22,26 @@ const textAlignValues = {
   right: "text-right",
 };
 const textAlignKeys = Object.keys(textAlignValues);
-const cellClassName = (align: TextAlignType | undefined) =>
+const cellClassName = (align: TextAlign | undefined) =>
   `p-2 ${align ? textAlignValues[align] : ""}`;
 
-function Table({ children }: IBaseProps) {
+function Table({ children }: BaseProps) {
   return <table className="w-full">{children}</table>;
 }
 
-function Head({ children }: IBaseProps) {
+function Head({ children }: BaseProps) {
   return <thead>{children}</thead>;
 }
 
-function Body({ children }: IBaseProps) {
+function Body({ children }: BaseProps) {
   return <tbody>{children}</tbody>;
 }
 
-function Row({ children }: IBaseProps) {
+function Row({ children }: BaseProps) {
   return <tr className="border-b border-gray-200">{children}</tr>;
 }
 
-function HeaderCell({ align, children, colSpan, scope }: HeaderCellPropsType) {
+function HeaderCell({ align, children, colSpan, scope }: HeaderCellProps) {
   return (
     <th colSpan={colSpan} className={cellClassName(align)} scope={scope}>
       {children}
@@ -49,7 +49,7 @@ function HeaderCell({ align, children, colSpan, scope }: HeaderCellPropsType) {
   );
 }
 
-function DataCell({ align, children, colSpan }: DataCellPropsType) {
+function DataCell({ align, children, colSpan }: DataCellProps) {
   return (
     <td colSpan={colSpan} className={cellClassName(align)}>
       {children}
@@ -65,4 +65,4 @@ Table.DataCell = DataCell;
 
 export default Table;
 export { textAlignKeys };
-export type { TextAlignType };
+export type { TextAlign };

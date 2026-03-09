@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import Table, { textAlignKeys } from "./Table";
-import type { TextAlignType } from "./Table";
+import type { TextAlign } from "./Table";
 
 const meta = {
   title: "library/Table",
@@ -12,7 +12,7 @@ const meta = {
         <Table.Head>
           <Table.Row>
             {textAlignKeys.map((item) => (
-              <Table.HeaderCell align={item as TextAlignType} key={item}>
+              <Table.HeaderCell align={item as TextAlign} key={item}>
                 {item}
               </Table.HeaderCell>
             ))}
@@ -26,7 +26,7 @@ const meta = {
         <Table.Body>
           <Table.Row>
             {textAlignKeys.map((item) => (
-              <Table.DataCell align={item as TextAlignType} key={item}>
+              <Table.DataCell align={item as TextAlign} key={item}>
                 {item}
               </Table.DataCell>
             ))}

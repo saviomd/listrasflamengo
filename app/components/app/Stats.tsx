@@ -1,11 +1,11 @@
 import { Container, Table } from "~/components/library";
 import { jerseys } from "~/data";
 
-interface IManufacturerStats {
+interface ManufacturerStats {
   manufacturer: string;
 }
 
-function ManufacturerStats({ manufacturer }: IManufacturerStats) {
+function ManufacturerStats({ manufacturer }: ManufacturerStats) {
   return {
     manufacturer,
     average: 0,

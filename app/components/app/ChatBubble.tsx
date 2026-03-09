@@ -1,10 +1,10 @@
-interface IProps {
+interface Props {
   author: string;
   message: string;
   self?: boolean;
 }
 
-function ChatBubble({ author, message, self = false }: IProps) {
+function ChatBubble({ author, message, self = false }: Props) {
   return (
     <div
       className={`mb-2 rounded-lg p-2 ${

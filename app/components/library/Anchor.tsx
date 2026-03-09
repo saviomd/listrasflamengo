@@ -1,12 +1,12 @@
 import type { ReactNode } from "react";
 
-interface IProps {
+interface Props {
   children: ReactNode;
   href: string;
   target?: "_blank" | "_parent" | "_self" | "_top";
 }
 
-function Anchor({ children, href, target }: IProps) {
+function Anchor({ children, href, target }: Props) {
   return (
     <a
       className="text-anchor underline"
